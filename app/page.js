@@ -1,7 +1,9 @@
+import { Navbar } from "@/components";
+
 export default function Home() {
   return (
-    <div>
-      <p>START</p>
+    <div className="bg-black overflow-hidden">
+      <Navbar />
     </div>
   );
 }
