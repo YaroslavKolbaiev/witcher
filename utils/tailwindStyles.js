@@ -1,6 +1,7 @@
-const styles = {
+export const styles = {
   innerWidth: "2xl:max-w-[1280px] w-full",
   interWidth: "lg:w-[80%] w-[100%]",
+  test: "text-white",
 
   paddings: "sm:p-16 xs:p-8 px-6 py-12",
   yPaddings: "sm:py-16 xs:py-8 py-12",
@@ -16,8 +17,8 @@ const styles = {
   // hero section
   heroHeading:
     "font-bold lg:text-[144px] md:text-[100px] sm:text-[60px] text-[44px] lg:leading-[158.4px] md:leading-[114.4px] sm:leading-[74.4px] leading-[64.4px] uppercase text-white",
+  heroImageContainer:
+    "w-full h-[140px] sm:h-[300px] md:h-[380px] lg:h-[500px] xl:h-[620px] 2xl:h-[720px] hero-gradient rounded-tl-[140px] z-[0]",
   heroDText:
     "md:w-[212px] sm:w-[80px] w-[60px] md:h-[108px] sm:h-[48px] h-[38px] md:border-[18px] border-[9px] rounded-r-[50px] border-white sm:mx-2 mx-[6px]",
 };
-
-export default styles;
