@@ -18,7 +18,7 @@ export function Navbar() {
       <div
         className={`${styles.innerWidth} mx-auto flex justify-between gap-8`}
       >
-        <AiOutlineSearch size="3rem" color="white" />
+        <img src="/wild.png" className="h-12 w-8" />
         <img src="/logo.png" className="h-64" alt="wildHunt" />
         <CiMenuBurger size="2rem" color="white" />
       </div>

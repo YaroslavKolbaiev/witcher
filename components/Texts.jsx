@@ -19,5 +19,14 @@ export const TypingText = ({ title, textStyles }) => {
 };
 
 export const TitleText = ({ title, textStyles }) => {
-  return <div className="bg-red-600">TypingText</div>;
+  return (
+    <motion.h2
+      variants={textVariant2}
+      initial="hidden"
+      whileInView="show"
+      className={`${textStyles} mt-2 font-bold md:text-6xl text-4xl text-white`}
+    >
+      {title}
+    </motion.h2>
+  );
 };
