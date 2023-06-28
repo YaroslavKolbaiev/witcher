@@ -11,7 +11,7 @@ import { ExploreChar } from "./ExploreChar";
 export const Explore = () => {
   const [active, setActive] = useState("char-2");
   return (
-    <section className={`${styles.paddings}`}>
+    <section id="chars" className={`${styles.paddings} mb-10`}>
       <motion.div
         variants={staggerContainer}
         initial="hidden"
@@ -29,7 +29,7 @@ export const Explore = () => {
           }
           textStyles="text-center"
         />
-        <div className="mt-12 flex lg:flex-row flex-col min-h-[70vh] items-center lg:items-stretch gap-5">
+        <div className="mt-12 flex lg:flex-row flex-col min-h-[720px] items-center lg:items-stretch gap-5">
           {characters.map((world, index) => (
             <ExploreChar
               key={world.id}

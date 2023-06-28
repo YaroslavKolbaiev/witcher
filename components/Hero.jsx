@@ -6,7 +6,7 @@ import { slideIn, staggerContainer } from "../utils/motion";
 
 export const Hero = () => {
   return (
-    <section className="pl-8 md:pl-20 lg:pl-40 xl:pl-72 2xl:pl-96">
+    <section className="pl-8 md:pl-20 lg:pl-40 xl:pl-72 2xl:pl-96 mb-10">
       <motion.div
         variants={staggerContainer}
         initial="hidden"

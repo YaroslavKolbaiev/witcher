@@ -1,4 +1,4 @@
-import { Hero, Navbar, About, Explore, GetStarted } from "@/components";
+import { Hero, Navbar, About, Explore, Schools } from "@/components";
 
 export default function Home() {
   return (
@@ -12,7 +12,7 @@ export default function Home() {
         <Explore />
       </div>
       <div className="relative">
-        <GetStarted />
+        <Schools />
         <div className="gradient-04 z-0" />
         {/* <WhatsNew /> */}
       </div>

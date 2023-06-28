@@ -21,7 +21,7 @@ export const ExploreChar = ({
       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
       className={`relative ${
         active === id ? "flex-[3.5]" : "flex-[0.5]"
-      } text-white flex items-center justify-center min-w-[300px] lg:min-w-[170px] max-h-[600px] translate-[flex] duration-500 ease-out-flex cursor-pointer`}
+      } text-white flex items-center justify-center min-w-[300px] lg:min-w-[170px] translate-[flex] duration-500 ease-out-flex cursor-pointer`}
     >
       <img
         src={imgUrl}

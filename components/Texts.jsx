@@ -1,6 +1,7 @@
 "use client";
 
 import { textContainer, textVariant2 } from "@/utils/motion";
+import { styles } from "@/utils/tailwindStyles";
 import { motion } from "framer-motion";
 
 export const TypingText = ({ title, textStyles }) => {
@@ -28,5 +29,18 @@ export const TitleText = ({ title, textStyles }) => {
     >
       {title}
     </motion.h2>
+  );
+};
+
+export const WitcherSchools = ({ number, text }) => {
+  return (
+    <div className={`${styles.flexCenter} flex-row`}>
+      <div
+        className={`${styles.flexCenter} w-16 h-16 rounded-3xl bg-[#323f5d]`}
+      >
+        <p className="font-bold text-lg text-white">{`0${number}`}</p>
+      </div>
+      <p className="flex-1 ml-8 text-lg text-[#b0b0b0]">{text}</p>
+    </div>
   );
 };
