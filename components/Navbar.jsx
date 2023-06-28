@@ -12,15 +12,21 @@ export function Navbar() {
       variants={navVariants}
       initial="hidden"
       whileInView="show"
+      viewport={{ once: true }}
       className={`${styles.xPaddings} py-8 relative z-10`}
     >
       <div className="absolute inset-20 gradient-01 right-0" />
       <div
         className={`${styles.innerWidth} mx-auto flex justify-between gap-8`}
       >
-        <AiOutlineSearch size="3rem" color="white" />
+        <img src="/wild.png" className="h-12 w-8" />
         <img src="/logo.png" className="h-64" alt="wildHunt" />
-        <CiMenuBurger size="2rem" color="white" />
+        {/* <CiMenuBurger size="2rem" color="white" /> */}
+        <div>
+          <a href="#chars" className="text-white">
+            Chars
+          </a>
+        </div>
       </div>
     </motion.nav>
   );
