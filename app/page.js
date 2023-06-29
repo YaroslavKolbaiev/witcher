@@ -1,4 +1,12 @@
-import { Hero, Navbar, About, Explore, Schools } from "@/components";
+import {
+  Hero,
+  Navbar,
+  About,
+  Explore,
+  Schools,
+  World,
+  Monsters,
+} from "@/components";
 
 export default function Home() {
   return (
@@ -14,7 +22,11 @@ export default function Home() {
       <div className="relative">
         <Schools />
         <div className="gradient-04 z-0" />
-        {/* <WhatsNew /> */}
+      </div>
+      <World />
+      <div className="relative">
+        <Monsters />
+        <div className="gradient-04 z-0" />
       </div>
     </div>
   );

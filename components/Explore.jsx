@@ -11,7 +11,7 @@ import { ExploreChar } from "./ExploreChar";
 export const Explore = () => {
   const [active, setActive] = useState("char-2");
   return (
-    <section id="chars" className={`${styles.paddings} mb-10`}>
+    <section id="chars" className={`${styles.paddings} mb-20`}>
       <motion.div
         variants={staggerContainer}
         initial="hidden"

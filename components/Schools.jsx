@@ -8,7 +8,7 @@ import { schools } from "@/constants";
 
 export const Schools = () => {
   return (
-    <section className={`${styles.paddings} relative z-10`}>
+    <section id="schools" className={`${styles.paddings} relative z-10 mb-20`}>
       <motion.div
         variants={staggerContainer}
         initial="hidden"

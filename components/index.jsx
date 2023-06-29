@@ -4,5 +4,17 @@ import { About } from "./About";
 import { TitleText, TypingText } from "./Texts";
 import { Explore } from "./Explore";
 import { Schools } from "./Schools";
+import { World } from "./World";
+import { Monsters } from "./Monsters";
 
-export { Navbar, Hero, About, TypingText, TitleText, Explore, Schools };
+export {
+  Navbar,
+  Hero,
+  About,
+  TypingText,
+  TitleText,
+  Explore,
+  Schools,
+  World,
+  Monsters,
+};
