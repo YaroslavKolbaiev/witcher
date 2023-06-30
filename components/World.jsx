@@ -20,12 +20,7 @@ export const World = () => {
           textStyles="text-center"
         />
         <TitleText
-          title={
-            <>
-              Toss a coin to students at Warsaw University who created a
-              highly-detailed scaled map of The Witcher's Continent
-            </>
-          }
+          title={<>Scaled map of The Witcher's Continent</>}
           textStyles="text-center"
         />
         <motion.div
@@ -33,21 +28,27 @@ export const World = () => {
           className="relative mt-16 w-2/3 lg:w-2/5 "
         >
           <img src="/world.jpg" alt="world" className="opacity-70" />
-          <div className="absolute top-[15%] right-[10%] w-16 h-16 p-1 rounded-full bg-red-800">
+          <div
+            className={`${styles.schoolImage} top-[15%] right-[10%] bg-red-800`}
+          >
             <img
               src="/kaer.jpg"
               alt="wolf"
               className="w-full h-full object-cover rounded-full"
             />
           </div>
-          <div className="absolute bottom-[20%] right-[25%] w-16 h-16 p-1 rounded-full bg-orange-700">
+          <div
+            className={`${styles.schoolImage} bottom-[20%] right-[25%] bg-orange-700`}
+          >
             <img
               src="/cat.jpg"
               alt="cat"
               className="w-full h-full object-cover rounded-full"
             />
           </div>
-          <div className="absolute bottom-[30%] left-[15%] w-16 h-16 p-1 rounded-full bg-green-700">
+          <div
+            className={`${styles.schoolImage} bottom-[30%] left-[15%] bg-green-700`}
+          >
             <img
               src="/grifin.jpg"
               alt="grifin"

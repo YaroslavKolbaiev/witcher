@@ -6,6 +6,8 @@ import {
   Schools,
   World,
   Monsters,
+  Feedback,
+  Footer,
 } from "@/components";
 
 export default function Home() {
@@ -22,12 +24,14 @@ export default function Home() {
       <div className="relative">
         <Schools />
         <div className="gradient-04 z-0" />
+        <World />
       </div>
-      <World />
       <div className="relative">
         <Monsters />
         <div className="gradient-04 z-0" />
+        <Feedback />
       </div>
+      <Footer />
     </div>
   );
 }

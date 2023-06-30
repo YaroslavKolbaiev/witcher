@@ -27,23 +27,17 @@ export const Hero = () => {
           </div>
         </motion.div>
         <div className="absolute flex gap-5 top-0 right-[10%]">
-          <a
-            className="text-white text-lg hover:text-red-400 transition duration-200 ease-in-out"
-            href="#chars"
-          >
+          <a className={styles.navlink} href="#chars">
             Characters
           </a>
-          <a
-            className="text-white text-lg hover:text-red-400 transition duration-200 ease-in-out"
-            href="#schools"
-          >
+          <a className={styles.navlink} href="#schools">
             Schools
           </a>
-          <a
-            className="text-white text-lg hover:text-red-400 transition duration-200 ease-in-out"
-            href="#world"
-          >
+          <a className={styles.navlink} href="#world">
             Wolrd
+          </a>
+          <a className={styles.navlink} href="#monsters">
+            Monsters
           </a>
         </div>
       </motion.div>

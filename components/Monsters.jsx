@@ -1,15 +1,15 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { fadeIn, staggerContainer } from "../utils/motion";
+import { staggerContainer } from "../utils/motion";
 import { styles } from "@/utils/tailwindStyles";
 import { TitleText, TypingText } from "./Texts";
 import { monsters } from "@/constants";
-import MonsterCard from "./MonsterCard";
+import { MonsterCard } from "./MonsterCard";
 
 export const Monsters = () => {
   return (
-    <section className={`${styles.paddings} relative z-10 mb-20`}>
+    <section id="monsters" className={`${styles.paddings} relative z-10 mb-20`}>
       <motion.div
         variants={staggerContainer}
         initial="hidden"

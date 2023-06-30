@@ -6,6 +6,8 @@ import { Explore } from "./Explore";
 import { Schools } from "./Schools";
 import { World } from "./World";
 import { Monsters } from "./Monsters";
+import { Feedback } from "./Feedback";
+import { Footer } from "./Footer";
 
 export {
   Navbar,
@@ -17,4 +19,6 @@ export {
   Schools,
   World,
   Monsters,
+  Feedback,
+  Footer,
 };
