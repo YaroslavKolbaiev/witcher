@@ -6,13 +6,13 @@ import { slideIn, staggerContainer } from "../utils/motion";
 
 export const Hero = () => {
   return (
-    <section className="pl-8 md:pl-20 lg:pl-40 xl:pl-72 2xl:pl-96 mb-10">
+    <section className="pl-8 md:pl-20 lg:pl-40 xl:pl-72 2xl:pl-96 mb-20 ">
       <motion.div
         variants={staggerContainer}
         initial="hidden"
         whileInView="show"
         viewport={{ once: false, amount: 0.25 }}
-        className={`${styles.innerWidth} mx-auto flex flex-col`}
+        className={`${styles.innerWidth} mx-auto flex flex-col relative`}
       >
         <motion.div
           variants={slideIn("right", "tween", 0.2, 1)}
@@ -26,6 +26,20 @@ export const Hero = () => {
             />
           </div>
         </motion.div>
+        <div className="absolute flex gap-5 top-0 right-[10%]">
+          <a className={styles.navlink} href="#chars">
+            Characters
+          </a>
+          <a className={styles.navlink} href="#schools">
+            Schools
+          </a>
+          <a className={styles.navlink} href="#world">
+            Wolrd
+          </a>
+          <a className={styles.navlink} href="#monsters">
+            Monsters
+          </a>
+        </div>
       </motion.div>
     </section>
   );
