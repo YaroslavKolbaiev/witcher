@@ -1,18 +1,17 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { styles } from "@/utils/tailwindStyles";
 import { fadeIn, staggerContainer, zoomIn } from "@/utils/motion";
 
 export const Feedback = () => {
   return (
-    <section className={`${styles.paddings} relative z-10 mb-20`}>
+    <section className="sm:p-16 xs:p-8 px-6 py-12 relative z-10 mb-20">
       <motion.div
         variants={staggerContainer}
         initial="hidden"
         whileInView="show"
         viewport={{ once: false, amount: 0.25 }}
-        className={`${styles.innerWidth} mx-auto flex flex-col lg:flex-row gap-6`}
+        className="mx-auto flex flex-col lg:flex-row gap-6"
       >
         <motion.div
           variants={fadeIn("right", "tween", 0.2, 1)}

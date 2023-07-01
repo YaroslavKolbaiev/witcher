@@ -1,23 +1,22 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { styles } from "../utils/tailwindStyles";
 import { fadeIn, staggerContainer } from "../utils/motion";
 import { TypingText } from "./Texts";
 
 export const About = () => (
-  <section className={`${styles.paddings} mb-20`}>
+  <section className="sm:p-16 xs:p-8 px-6 py-12 mb-10">
     <motion.div
       variants={staggerContainer}
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.25 }}
-      className={`${styles.innerWidth} mx-auto flex justify-center items-center flex-col`}
+      className="mx-auto flex justify-center items-center flex-col"
     >
-      <TypingText title="| About Witcher" textStyles="text-center" />
+      <TypingText title="| About The Witcher" textStyles="text-center" />
       <motion.p
         variants={fadeIn("up", "tween", 0.2, 1)}
-        className="mt-2 md:text-2xl text-lg text-justify text-white max-w-4xl px-6"
+        className="mt-2 md:text-2xl md:leading-9 text-lg text-justify text-white max-w-4xl px-6"
       >
         <span className="font-extrabold text-white">
           The Witcher 3: Wild Hunt

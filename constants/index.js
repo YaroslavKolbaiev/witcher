@@ -52,3 +52,18 @@ export const monsters = [
     desc: "A striga is a human woman transformed into a monster by a curse. She is filled with hatred towards all living beings, devouring them without a second thought. She only comes out on a full moon to hunt, fighting with incredible speed and strength. There is not much known about the curse that turns females into striga. The only well-documented example of a striga's lifetime was that of Adda the White, daughter of Foltest, king of Temeria. She was cursed prior to her birth, then born a striga.",
   },
 ];
+
+export const socials = [
+  {
+    name: "facebook",
+    url: "/f.png",
+  },
+  {
+    name: "insta",
+    url: "/i.png",
+  },
+  {
+    name: "twiter",
+    url: "/t.png",
+  },
+];

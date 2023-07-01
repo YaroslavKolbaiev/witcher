@@ -1,8 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { styles } from "../utils/tailwindStyles";
-import { navVariants, fadeIn } from "../utils/motion";
+import { fadeIn } from "../utils/motion";
 
 export const ExploreChar = ({
   id,
