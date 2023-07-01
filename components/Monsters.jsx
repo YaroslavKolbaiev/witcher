@@ -2,20 +2,22 @@
 
 import { motion } from "framer-motion";
 import { staggerContainer } from "../utils/motion";
-import { styles } from "@/utils/tailwindStyles";
 import { TitleText, TypingText } from "./Texts";
 import { monsters } from "@/constants";
 import { MonsterCard } from "./MonsterCard";
 
 export const Monsters = () => {
   return (
-    <section id="monsters" className={`${styles.paddings} relative z-10 mb-20`}>
+    <section
+      id="monsters"
+      className="sm:p-16 xs:p-8 px-6 py-12 relative z-10 mb-20"
+    >
       <motion.div
         variants={staggerContainer}
         initial="hidden"
         whileInView="show"
         viewport={{ once: false, amount: 0.25 }}
-        className={`${styles.innerWidth} mx-auto flex flex-col`}
+        className=" mx-auto flex flex-col"
       >
         <TypingText title="| Monsters" textStyles="text-center" />
         <TitleText title="Creatures and Monsters" textStyles="text-center" />

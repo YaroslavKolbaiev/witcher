@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { styles } from "../utils/tailwindStyles";
 import { navVariants } from "../utils/motion";
 
 export function Navbar() {
@@ -11,7 +10,7 @@ export function Navbar() {
       initial="hidden"
       whileInView="show"
       viewport={{ once: true }}
-      className={`${styles.xPaddings} py-8 relative z-10`}
+      className="sm:px-16 px-6 py-8 relative z-10"
     >
       <div className="absolute inset-20 gradient-01 right-0" />
       <img src="/wild.png" className="h-12 w-8" />

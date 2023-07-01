@@ -2,22 +2,21 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { styles } from "../utils/tailwindStyles";
-import { fadeIn, staggerContainer } from "../utils/motion";
-import { TypingText, ExploredCard, TitleText } from "./Texts";
+import { staggerContainer } from "../utils/motion";
+import { TypingText, TitleText } from "./Texts";
 import { characters } from "@/constants";
 import { ExploreChar } from "./ExploreChar";
 
 export const Explore = () => {
   const [active, setActive] = useState("char-2");
   return (
-    <section id="chars" className={`${styles.paddings} mb-20`}>
+    <section id="chars" className="sm:p-16 xs:p-8 px-6 py-12 mb-20">
       <motion.div
         variants={staggerContainer}
         initial="hidden"
         whileInView="show"
         viewport={{ once: false, amount: 0.25 }}
-        className={`${styles.innerWidth} mx-auto max-w-6xl flex flex-col`}
+        className=" mx-auto max-w-6xl flex flex-col"
       >
         <TypingText title="| Characters" textStyles="text-center" />
         <TitleText
