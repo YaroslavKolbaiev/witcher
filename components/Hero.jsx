@@ -24,7 +24,7 @@ export const Hero = () => {
               className="w-full h-full object-cover rounded-tl-[140px] z-10"
             />
           </div>
-          <div className="absolute flex gap-5 bottom-0 right-[10%]">
+          <div className="absolute flex flex-col sm:flex-row gap-3 bottom-0 right-[10%]">
             <a
               className="text-white text-lg hover:text-red-400 transition duration-200 ease-in-out"
               href="#chars"
